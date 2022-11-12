@@ -3,8 +3,47 @@ html, body {
   overflow: hidden
 }
 
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
 .pills {
-    text-align: center;
+  text-align: center;
 }
 
 img:hover {
@@ -69,4 +108,138 @@ body {
 .hide-bg {
   mix-blend-mode: normal;
   filter: contrast(1);
+}
+
+.fade-in {
+  animation: fadeIn ease 15s;
+  -webkit-animation: fadeIn ease 15s;
+  -moz-animation: fadeIn ease 15s;
+  -o-animation: fadeIn ease 15s;
+  -ms-animation: fadeIn ease 15s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.under {
+  text-align: center;
+  z-index: 2;
+}
+
+.over {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  z-index: 1;
+}
+@import "compass/css3";
+
+
+@keyframes pretty-fade{
+  0%{
+     -webkit-filter:brightness(1) contrast(1) saturate(1);
+  };
+  100%{
+     -webkit-filter:brightness(0) contrast(5) saturate(0.5);
+  };
+}
+
+.fade-out {
+  text-align: center;
+  animation: fadeOut ease 5s;
+  -webkit-animation: fadeOut ease 5s;
+  -moz-animation: fadeOut ease 5s;
+  -o-animation: fadeOut ease 5s;
+  -ms-animation: fadeOut ease 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
 }
