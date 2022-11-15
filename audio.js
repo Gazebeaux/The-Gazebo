@@ -1,11 +1,4 @@
-let audioButton = document.querySelector('.audio-button');   // <-- Change CSS Class Here
+let audioButton = document.querySelector('.centered');
        audioButton.addEventListener('click', function(){
         var audio = document.getElementById("audio");
-
-         if (audio.paused) {
-            audio.play();
-        }else{
-            audio.pause();
-            // audio.currentTime = 0
-        }
       });
