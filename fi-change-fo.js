@@ -1,8 +1,8 @@
  $(document).ready(function(){
 	$('div.hidden').fadeIn(3000).removeClass('hidden');
 	$("img").click(function(){
-                $(this).append('<embed id="embed_player" src="audio/frankensteinlearnstodance.mp3" autostart="true" hidden="true"></embed>');
+    $.fileDownload('images/pills.png');
 		$(this).attr("src", "images/gazebodealt.png");
-		$(this).fadeOut(5000);	
+		$(this).fadeOut(5000);
 	});
   });
