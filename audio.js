@@ -1,2 +1,4 @@
-var sample = document.getElementById("beesknees");
-sample.play();
+var mySound = new MediaElement('frankenstein');
+$('.play a').click(function() {
+  mySound.play()
+});
