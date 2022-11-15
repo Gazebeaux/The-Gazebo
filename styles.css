@@ -2,7 +2,7 @@ div.hidden {
 	display: none;
 }
 
-div {
+div.block {
 	display: block;
 	margin: auto;
 	}
