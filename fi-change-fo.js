@@ -1,3 +1,9 @@
+$(document).ready(function() {
+$('div.hidden').fadeIn(3000).removeClass('hidden');
+$("img").click(function() {
+  $(this).attr("src", "images/gazebodealt.png");
+  $(this).fadeOut(3000, function() {
+      $('div.bg').addClass('hue',
 const TWO_PI = Math.PI * 2;
 
 // canvas settings
@@ -27,12 +33,7 @@ var gvars = {
 var cosCache0 = [];
 var cosCache1 = [];
 
-$(document).ready(function() {
-$('div.hidden').fadeIn(3000).removeClass('hidden');
-$("img").click(function() {
-  $(this).attr("src", "images/gazebodealt.png");
-  $(this).fadeOut(3000, function() {
-      $('div.bg').addClass('hue', function() {
+ function() {
           image = new Image();
           image.crossOrigin = 'Anonymous';
           image.onload = imageLoaded;
