@@ -4,8 +4,6 @@
 		$(this).attr("src", "images/gazebodealt.png");
     $(this).fadeOut(3000, function(){
      		  $('div.bg').addClass('hue');
-          $( "glitch_canvas" ).show( "slow", function() {
-            });
     		});
 	});
 });
