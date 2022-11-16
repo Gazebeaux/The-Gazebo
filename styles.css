@@ -1,4 +1,4 @@
-  html, body {
+html, body {
     margin:0;
     max-width: 100%;
     overflow-x: hidden;
@@ -6,12 +6,15 @@
 }
 
 div.bg {
+  position: relative;
   height:100%;
-  background: url(images/pretty.png) repeat-y;
+  background: url(https://i.imgur.com/FyViU1P.png);
+  background-repeat: repeat-y;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin-bottom: -100px;
 }
 
 div.hue {
@@ -51,9 +54,21 @@ div.hidden {
 	display: none;
 }
 
-div.block {
-	display: block;
-	margin: auto;
+div.popup {
+	display: none;
+}
+
+div.flex {
+	height: 100vh;
+	width: 100vw;
+	max-height: 800px;
+	max-width: 1280px;
+	min-height: 600px;
+	min-width: 1000px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
 	}
 
 img:hover {
@@ -115,6 +130,101 @@ img.centered {
     top:  50%;
     margin-left: -400px; /* 800px/2 = 500px */
     margin-top:  -400px; /* ditto */
+}
+
+.border {
+height: 369px;
+width: 290px;
+background: transparent;
+border-radius: 10px;
+transition: border 1s;
+position: relative;
+}
+
+.border:hover {
+border: 10px solid Gold;
+}
+
+.card {
+height: 379px;
+width: 300px;
+background: #808080;
+border-radius: 10px;
+transition: background 0.8s;
+overflow: hidden;
+box-shadow: 0 70px 63px -60px #000;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.card0 {
+background: url("https://i.imgur.com/8Oo57j4.png") center center no-repeat;
+background-size: 600px;
+}
+.card0:hover {
+background: url("https://i.imgur.com/8Oo57j4.png") left center no-repeat;
+background-size: 600px;
+}
+.card0:hover h2 {
+opacity: 1;
+}
+.card0:hover .fa {
+opacity: 1;
+}
+.card1 {
+background: url("https://i.imgur.com/zxdjTao.png") center center no-repeat;
+background-size: 300px 390px;
+}
+.card1:hover {
+background: url("https://i.imgur.com/96BvGC4.png") center center no-repeat;
+background-size: 300px 390px;
+}
+.card1:hover h2 {
+opacity: 1;
+}
+.card1:hover .fa {
+opacity: 1;
+}
+.card2 {
+background: url("https://i.imgur.com/lKkBUY8.png") center center no-repeat;
+background-size: 310px;
+}
+.card2:hover {
+background: url("https://i.imgur.com/lKkBUY8.png") right center no-repeat;
+background-size: 310px;
+}
+.card2:hover h2 {
+opacity: 1;
+}
+.card2:hover .fa {
+opacity: 1;
+}
+h2 {
+font-family: 'Nosifer', cursive;
+color: #ffd700;
+margin: auto;
+text-align: center;
+opacity: 0;
+transition: opacity 1s;
+}
+.fa {
+opacity: 0;
+transition: opacity 1s;
+}
+
+.items {
+position: absolute;
+fill: #ffd700;
+color: #ffd700;
+height: 130px;
+top: 226px;
+width: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
 }
 
 .hide-bg {
