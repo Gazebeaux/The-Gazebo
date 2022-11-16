@@ -1,4 +1,4 @@
-html, body {
+  html, body {
     margin:0;
     max-width: 100%;
     overflow-x: hidden;
@@ -23,11 +23,11 @@ div.hue {
   0% {
     -webkit-filter: hue-rotate(0deg);
   }
-  
+
   50% {
     -webkit-filter: hue-rotate(360deg);
   }
-  
+
   100% {
     -webkit-filter: hue-rotate(0deg);
   }
@@ -37,11 +37,11 @@ div.hue {
   0% {
     filter: hue-rotate(0deg);
   }
-  
+
   50% {
     filter: hue-rotate(360deg);
   }
-  
+
   100% {
     filter: hue-rotate(0deg);
   }
@@ -120,4 +120,15 @@ img.centered {
 .hide-bg {
   mix-blend-mode: normal;
   filter: contrast(1);
+}
+
+#glitch_canvas {
+    position: absolute;
+    margin: auto;
+    width: 512px;
+    height: 512px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
