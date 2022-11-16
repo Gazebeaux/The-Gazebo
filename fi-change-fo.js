@@ -4,6 +4,7 @@ $("img").click(function() {
   $(this).attr("src", "images/gazebodealt.png");
   $(this).fadeOut(3000, function() {
       $('div.bg').addClass('hue',
+
 const TWO_PI = Math.PI * 2;
 
 // canvas settings
