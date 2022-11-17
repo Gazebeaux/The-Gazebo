@@ -14,8 +14,6 @@ div.bg {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-bottom: -100px;
-  filter: hue-rotate(0deg);
 }
 
 .neon {
@@ -31,45 +29,21 @@ div.bg {
     0 0 150px #0ff;
 }
 
-div.hue {
-  -webkit-animation: filter-animation 8s infinite;
-  animation: filter-animation 8s infinite;
-}
-
-@-webkit-keyframes filter-animation {
-  0% {
-    -webkit-filter: hue-rotate(0deg);
-  }
-
-  50% {
-    -webkit-filter: hue-rotate(360deg);
-  }
-
-  100% {
-    -webkit-filter: hue-rotate(0deg);
-  }
-}
-
-@keyframes filter-animation {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-
-  50% {
-    filter: hue-rotate(360deg);
-  }
-
-  100% {
-    filter: hue-rotate(0deg);
-  }
-}
-
 div.hidden {
 	display: none;
 }
 
 div.popup {
 	display: none;
+}
+
+div.bdfilter {
+  position:relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  backdrop-filter: hue-rotate(0deg);
 }
 
 div.flex {
@@ -244,9 +218,4 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-around;
-}
-
-.hide-bg {
-  mix-blend-mode: normal;
-  filter: contrast(1);
 }
