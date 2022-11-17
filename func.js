@@ -2,7 +2,9 @@ $(document).ready(function () {
   $("div.hidden").fadeIn(3000).removeClass("hidden");
   $("img").click(function () {
     $(this).attr("src", "images/gazebodealt.png");
-    $(this).fadeOut(3000, function () {
+    $(this).fadeOut(3000, function play() {
+           var audio = document.getElementById("audio");
+           audio.play();
       $("div.popup").removeClass("popup");
       $("div.bg").mousemove(function(e) {
         var X = e.pageX;
