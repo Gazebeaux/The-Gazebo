@@ -18,6 +18,19 @@ div.bg {
   filter: hue-rotate(0deg);
 }
 
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
 div.hue {
   -webkit-animation: filter-animation 8s infinite;
   animation: filter-animation 8s infinite;
@@ -161,11 +174,11 @@ position: relative;
 }
 
 .card0 {
-background: url("https://i.imgur.com/8Oo57j4.png") center center no-repeat;
+background: url("images/metransparent.png") center center no-repeat;
 background-size: 600px;
 }
 .card0:hover {
-background: url("https://i.imgur.com/8Oo57j4.png") left center no-repeat;
+background: url("images/metransparent.png") left center no-repeat;
 background-size: 600px;
 }
 .card0:hover h2 {
@@ -175,11 +188,11 @@ opacity: 1;
 opacity: 1;
 }
 .card1 {
-background: url("https://i.imgur.com/zxdjTao.png") center center no-repeat;
+background: url("images/Tripsitteridk.png") center center no-repeat;
 background-size: 300px 390px;
 }
 .card1:hover {
-background: url("https://i.imgur.com/96BvGC4.png") center center no-repeat;
+background: url("images/Tripsitterhue.png") center center no-repeat;
 background-size: 300px 390px;
 }
 .card1:hover h2 {
@@ -189,11 +202,11 @@ opacity: 1;
 opacity: 1;
 }
 .card2 {
-background: url("https://i.imgur.com/lKkBUY8.png") center center no-repeat;
+background: url("images/Gazebomorphictransparent1.png") center center no-repeat;
 background-size: 310px;
 }
 .card2:hover {
-background: url("https://i.imgur.com/lKkBUY8.png") right center no-repeat;
+background: url("images/Gazebomorphictransparent1.png") right center no-repeat;
 background-size: 310px;
 }
 .card2:hover h2 {
@@ -210,6 +223,11 @@ text-align: center;
 opacity: 0;
 transition: opacity 1s;
 }
+
+.a {
+  font-family: 'Nosifer',cursive;
+}
+
 .fa {
 opacity: 0;
 transition: opacity 1s;
