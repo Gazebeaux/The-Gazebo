@@ -196,6 +196,7 @@ color: #ffd700;
 margin: auto;
 text-align: center;
 opacity: 0;
+font-size: 3em;
 transition: opacity 1s;
 }
 
