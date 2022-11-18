@@ -199,10 +199,6 @@ opacity: 0;
 transition: opacity 1s;
 }
 
-.a {
-  font-family: 'Nosifer',cursive;
-}
-
 .fa {
 opacity: 0;
 transition: opacity 1s;
