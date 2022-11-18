@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  $("div.hidden").fadeIn(3000).removeClass("hidden");
+  $("div.hidden").fadeIn(1500).removeClass("hidden");
   $("img").hover(function () {
     $(this).attr("src", "images/gazebodealt.png");
-    $(this).fadeOut(3000, function play() {
+    $(this).fadeOut(8000, function play() {
            var audio = document.getElementById("audio");
            audio.play();
       $("div.popup").removeClass("popup");
