@@ -121,19 +121,6 @@ img.centered {
     margin-top:  -400px; /* ditto */
 }
 
-.border {
-height: 369px;
-width: 290px;
-background: transparent;
-border-radius: 10px;
-transition: border 1s;
-position: relative;
-}
-
-.border:hover {
-border: 10px solid Gold;
-}
-
 .card {
 height: 379px;
 width: 300px;
