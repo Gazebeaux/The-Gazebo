@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("div.hidden").fadeIn(2000).removeClass("hidden");
+  $("div.hidden").fadeIn(4000).removeClass("hidden");
   $("img").hover(function () {
     $(this).attr("src", "images/gazebodealt.png");
     $(this).fadeOut(6000, function play() {
