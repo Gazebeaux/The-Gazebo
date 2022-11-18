@@ -171,7 +171,7 @@ background-size: 310px;
 background: url("images/Gazebomorphictransparent1.png") right center no-repeat;
 background-size: 310px;
 }
-.card2:hover h2 {
+.card2:hover h3 {
 opacity: 1;
 }
 .card2:hover .fa {
@@ -184,6 +184,16 @@ margin: auto;
 text-align: center;
 opacity: 0;
 font-size: 3em;
+transition: opacity 1s;
+}
+
+h3 {
+font-family: 'Nosifer', cursive;
+color: #ffd700;
+margin: auto;
+text-align: center;
+opacity: 0;
+font-size: 1.6em;
 transition: opacity 1s;
 }
 
