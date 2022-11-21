@@ -86,7 +86,7 @@ div.hidden {
 }
 
 .glitch1 {
-  font-size: 6rem;
+  font-size: 3rem;
   color: greenyellow;
   position: relative;
   font-family: "Nosifer", cursive;
@@ -99,7 +99,7 @@ div.hidden {
   position: absolute;
   left: -3px;
   text-shadow: -3px -3px 0px #9b5de5;
-  animation: anime2;
+  animation: anime;
   animation-duration: 0.4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -111,12 +111,44 @@ div.hidden {
   position: absolute;
   text-shadow: 3px 5px 0px fuchsia;
   left: -2px;
-  animation: anime2;
+  animation: anime;
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   z-index: 999;
 }
+
+.glitch2 {
+  font-size: 4rem;
+  color: greenyellow;
+  position: relative;
+  font-family: "Nosifer", cursive;
+  z-index: 999;
+}
+
+
+.glitch2:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -3px;
+  text-shadow: -3px -3px 0px #9b5de5;
+  animation: anime;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.glitch2:after {
+  content: attr(data-text);
+  position: absolute;
+  text-shadow: 3px 5px 0px fuchsia;
+  left: -2px;
+  animation: anime;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 
 @keyframes anime {
   0% {
@@ -253,13 +285,12 @@ button {
 
 @media (max-width: 1000px) {
   .profile {
-    margin-bottom: 7rem
+
   }
 }
 
 .profile__picture {
   height: 4rem;
-  margin-bottom: 4rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -272,7 +303,7 @@ button {
 }
 
 .pp {
-  margin-left: 8rem;
+  margin-left: 55rem;
   position: relative;
   z-index: 999;
 }
@@ -283,7 +314,7 @@ button {
 }
 
 .profile__blurb {
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 700px;
   line-height: 1.8;
   position: relative;
@@ -311,12 +342,14 @@ button {
 }
 
 .skills {
+
   display: flex;
   justify-content: center;
   z-index: 999;
 }
 
 .skills__row {
+
   display: flex;
   flex-direction: column;
   justify-content: center
@@ -454,7 +487,7 @@ button {
 }
 
 .skills__item-name {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-weight: 600;
   line-height: 1;
   transition: all 0.2s;
