@@ -44,7 +44,7 @@ html {
 
 body {
   min-height: 100vh;
-  color: #fafafa;
+  color: #fff700;
   font-family: "Nosifer", cursive;
   background: url=(https://i.imgur.com/mEnhvF2.png);
  overflow-x: hidden;
@@ -578,7 +578,6 @@ button {
 .contact__heading:before {
   position: absolute;
   content: '';
-  border-bottom: 18px solid #ff4d5a;
   width: 21rem;
   display: block;
   margin: 0 auto;
@@ -595,7 +594,7 @@ button {
 }
 
 .contact__text {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin-bottom: 6rem
 }
 
@@ -877,7 +876,7 @@ button {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  color: #fafafa;
+  color: #fff700;
   font-weight: 300;
   z-index: 999;
 }
