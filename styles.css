@@ -103,6 +103,7 @@ div.hidden {
   animation-duration: 0.4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  z-index: 999;
 }
 
 .glitch1:after {
@@ -114,6 +115,7 @@ div.hidden {
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  z-index: 999;
 }
 
 @keyframes anime {
@@ -220,7 +222,8 @@ button {
 .about__content {
   display: flex;
   justify-content: space-between;
-  width: 100%
+  width: 100%;
+  z-index: 999;
 }
 
 @media (max-width: 1300px) {
@@ -259,8 +262,9 @@ button {
   margin-bottom: 4rem;
   display: flex;
   justify-content: flex-start;
-  align-items: center
-
+  align-items: center;
+  display: block;
+  z-index: 999;
 }
 
 .profile__picture svg {
@@ -268,9 +272,8 @@ button {
 }
 
 .pp {
-  margin-top: 1rem;
+  margin-left: 8rem;
   position: relative;
-  text-align: center;
   z-index: 999;
 }
 
@@ -282,7 +285,10 @@ button {
 .profile__blurb {
   font-size: 2.5rem;
   width: 700px;
-  line-height: 1.8
+  line-height: 1.8;
+  position: relative;
+  display: block;
+  z-index: 999;
 }
 
 @media (max-width: 600px) {
@@ -306,7 +312,8 @@ button {
 
 .skills {
   display: flex;
-  justify-content: center
+  justify-content: center;
+  z-index: 999;
 }
 
 .skills__row {
@@ -541,7 +548,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 999;
   margin-bottom: 10rem
 }
 
@@ -889,7 +896,7 @@ button {
   overflow-y: hidden;
   margin-top:10rem;
   font-size: 6rem;
-  background-color: rgba(26, 26, 26, 0.25);
+
   animation-duration: 1.4s;
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99)
 }
@@ -897,7 +904,7 @@ button {
 .heading__line-2 {
   text-align: center;
   font-size: 3.8rem;
-  background-color: rgba(26, 26, 26, 0.25);
+
   animation-duration: 1.4s;
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99)
 }
@@ -1115,6 +1122,8 @@ button {
   align-items: center
 }
 
+
+
 .projects__heading:before {
   position: absolute;
   content: '';
@@ -1209,7 +1218,9 @@ button {
 
 .project__image-image {
   width: 85%;
-  position: relative
+  position: relative;
+  display: block;
+  z-index: 999;
 }
 
 .project__image-image img {
