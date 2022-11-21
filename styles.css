@@ -1,5 +1,4 @@
-​@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap');
-@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap);
+​@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 
 *, *::before, *::after {
   margin: 0;
@@ -263,7 +262,12 @@ button {
 }
 
 .pp {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.pp1 {
   position: relative;
   text-align: center;
 }
@@ -833,6 +837,7 @@ button {
   width: 100%
 }
 
+
 .heading {
   position: relative;
   align-self: center;
@@ -848,6 +853,8 @@ button {
   color: #fafafa;
   font-weight: 300;
   z-index: 999
+  margin-top:4rem;
+
 }
 
 .heading__line-1 {
@@ -861,6 +868,7 @@ button {
 }
 
 .heading__line-1  {
+  margin-top: 15rem;
   font-size: 6rem;
   background-color: rgba(26, 26, 26, 0.25);
   animation-duration: 1.4s;
@@ -890,11 +898,18 @@ button {
   }
 }
 
+.know {
+  align-items: center;
+  width: 17.5rem;
+  height: 2.8rem;
+}
+
 .heading-cta {
   position: relative;
   display: flex;
   align-items: center;
-  width: 27.5rem;
+  margin-bottom: 20rem;
+  width: 21.5rem;
   height: 4.8rem;
   background-color: rgba(26, 26, 26, 0.6);
   border: 2px solid fuchsia;
@@ -931,7 +946,7 @@ button {
   position: absolute;
   top: -2px;
   left: -2px;
-  width: 27.5rem;
+  width: 21.5rem;
   height: 4.8rem;
   border-radius: 3px;
   border: 2px solid greenyellow;
@@ -943,13 +958,13 @@ button {
 
 @media (max-width: 1500px) {
   .heading-cta:before, .heading-cta:after {
-    width: 27.8rem;
+    width: 21.8rem;
   }
 }
 
 @media (max-width: 1200px) {
   .heading-cta:before, .heading-cta:after {
-    width: 28.5rem;
+    width: 21.5rem;
     border: 2px solid transparent
   }
 }
@@ -978,7 +993,7 @@ button {
   display: inline-block;
   height: 24px;
   width: 24px;
-  margin-left: 15px;
+  margin-left: 12px;
   transform: rotate(90deg);
   fill: greenyellow;
   transition: all 0.3s
