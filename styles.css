@@ -349,7 +349,7 @@ button {
 }
 
 .skills__row {
-
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center
@@ -577,7 +577,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  width: 500px;
+  width: 700px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1265,7 +1265,8 @@ button {
   margin-left: 8rem;
   height: fit-content;
   padding: 1rem;
-  z-index: 9999999
+  z-index: 9999999;
+  color: #fff700;
 }
 
 @media (max-width: 1000px) {
@@ -1369,7 +1370,7 @@ button {
   position: absolute;
   content: '';
   height: 2px;
-  background-color: #ff4d5a;
+  background-color: greenyellow;
   width: 100%;
   bottom: 1px;
   display: block;
