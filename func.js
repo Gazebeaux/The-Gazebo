@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("div.hidden").fadeIn(1000).removeClass("hidden");
   $("img").click(function () {
-    $(this).attr("src", "https://i.imgur.com/IBy5OZb.png");
+    $(this).attr("src", "https://i.imgur.com/mFSlehC.png");
    $(canvas).css("background-image", "url(" + imageUrl + ")");
       $("div.bg").mousemove(function(e) {
         var X = e.pageX;
