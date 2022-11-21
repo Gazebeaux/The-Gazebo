@@ -945,7 +945,7 @@ button {
 
 @media (max-width: 1500px) {
   .heading-cta:before, .heading-cta:after {
-    width: 27.8rem
+    width: 27.8rem;
   }
 }
 
