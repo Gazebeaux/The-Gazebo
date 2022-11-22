@@ -729,8 +729,9 @@ body {
     font-weight: 700;
     letter-spacing: 3px;
     z-index: 9;
-    cursor: pointer
-  }
+    cursor: pointer;
+    font-family: "Nosifer", cursive;  
+}
 
   .contact__form-submit:hover {
     color: #1a1a1a;
