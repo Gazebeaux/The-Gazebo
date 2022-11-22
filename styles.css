@@ -46,7 +46,7 @@ body {
   min-height: 100vh;
   color: #fff700;
   font-family: "Nosifer", cursive;
-  background: src="images/pretty.png";
+  background-image: src="images/pretty.png";
       overflow-x: hidden;
   }
 
