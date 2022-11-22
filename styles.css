@@ -46,7 +46,7 @@ body {
   min-height: 100vh;
   color: #fff700;
   font-family: "Nosifer", cursive;
-  background-image: src="images/lightblack.png";
+  background: url="images/lightblack.png";
       overflow-x: hidden;
   }
 
