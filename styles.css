@@ -700,8 +700,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
-  }
+    justify-content: center;
+    font-family: "Nosifer", cursive;  
+}
 
   .contact__form-name, .contact__form-email {
     margin-bottom: 6px;
@@ -729,8 +730,7 @@ body {
     font-weight: 700;
     letter-spacing: 3px;
     z-index: 9;
-    cursor: pointer;
-    font-family: "Nosifer", cursive;  
+    cursor: pointer;  
 }
 
   .contact__form-submit:hover {
