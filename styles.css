@@ -369,7 +369,7 @@ body {
   }
 
   .pp {
-    margin-left: 55rem;
+    text-align: center;
     position: relative;
     z-index: 999;
   }
