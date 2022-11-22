@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $("div.hidden").fadeIn(1500).removeClass("hidden");
-  $("img").click(function () {
+  $("img#deal").click(function () {
     $(this).attr("src", "images/gazebodealt.png");
     $("div.canvas").css("background", "url(images/pretty.png)");
       $(document).mousemove(function(e) {
