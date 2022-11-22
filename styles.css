@@ -716,6 +716,7 @@ body {
   }
 
   .contact__form-submit-2 {
+    font-family: "Nosifer", cursive;
     align-self: flex-start;
     margin-top: 0 !important
   }
