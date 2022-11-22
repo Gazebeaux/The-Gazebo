@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("div.hidden").fadeIn(1000).removeClass("hidden");
+  $("div.hidden").fadeIn(1500).removeClass("hidden");
   $("img").click(function () {
     $(this).attr("src", "https://i.imgur.com/mFSlehC.png");
     $("div.canvas").css("background", "url(https://i.imgur.com/FyViU1P.png)");
